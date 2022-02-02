@@ -5,7 +5,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 $.getJSON("sf_crime.geojson",function(data){
-	var icon = L.icon({
+	var ratIcon = L.icon({
 		iconUrl: "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/43207/oncoming-police-car-emoji-clipart-md.png",
 		iconSize: [40,40]
 	});
